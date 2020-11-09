@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +97,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fighter_jet_icon_157720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fist_icon_158564.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gui_home_icon_158442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gui_portfolio_icon_157607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gui_user_ninja_icon_157555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hangloose_icon_157540.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\religion_eyeofra_icon_158250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\religion_pentagram_icon_158245.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\scifi_starwars_darth_icon_157471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\shop_cart_icon_157457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\social_instagram_icon_157441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tech_car_beetle_icon_157415.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
