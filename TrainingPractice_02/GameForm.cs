@@ -16,5 +16,32 @@ namespace TrainingPractice_02
         {
             InitializeComponent();
         }
+
+        private void Init()
+        {
+
+        }
+
+        private void ShuffleImages()
+        {
+
+        }
+
+        private void Retry_Button_Click(object sender, EventArgs e)
+        {
+            GameForm newGame = new GameForm();
+            Close();
+            newGame.Show();
+        }
+
+        private void ExitToMenu_Button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void CheckButtonClick()
+        {
+
+        }
     }
 }

@@ -53,7 +53,6 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -66,6 +65,7 @@
             this.ExitToMenu_Button.TabIndex = 0;
             this.ExitToMenu_Button.Text = "Выход";
             this.ExitToMenu_Button.UseVisualStyleBackColor = true;
+            this.ExitToMenu_Button.Click += new System.EventHandler(this.ExitToMenu_Button_Click);
             // 
             // Retry_Button
             // 
@@ -75,6 +75,7 @@
             this.Retry_Button.TabIndex = 1;
             this.Retry_Button.Text = "Начать сначала";
             this.Retry_Button.UseVisualStyleBackColor = true;
+            this.Retry_Button.Click += new System.EventHandler(this.Retry_Button_Click);
             // 
             // Image1Show_Button
             // 
@@ -252,15 +253,6 @@
             this.button22.TabIndex = 23;
             this.button22.UseVisualStyleBackColor = true;
             // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(274, 327);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(101, 49);
-            this.button23.TabIndex = 24;
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button23.UseVisualStyleBackColor = true;
-            // 
             // button24
             // 
             this.button24.Location = new System.Drawing.Point(400, 327);
@@ -284,7 +276,6 @@
             this.ClientSize = new System.Drawing.Size(674, 465);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
-            this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
@@ -342,7 +333,6 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
     }

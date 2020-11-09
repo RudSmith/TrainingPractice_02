@@ -19,7 +19,8 @@ namespace TrainingPractice_02
 
         private void StartGame_Button_Click(object sender, EventArgs e)
         {
-
+            GameForm gameForm = new GameForm();
+            gameForm.Show();
         }
 
         private void AboutGame_Button_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace TrainingPractice_02
 
         private void ExitGame_Button_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }
