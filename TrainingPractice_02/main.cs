@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace TrainingPractice_02
 {
-    static class Program
+    static class main
     {
         /// <summary>
         /// Главная точка входа для приложения.
@@ -16,7 +16,7 @@ namespace TrainingPractice_02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainMenuForm());
         }
     }
 }
