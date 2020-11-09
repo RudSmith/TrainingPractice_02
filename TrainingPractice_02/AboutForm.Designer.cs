@@ -62,7 +62,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AboutForm";
-            this.Text = "AboutForm";
+            this.Text = "О игре";
             this.ResumeLayout(false);
 
         }
