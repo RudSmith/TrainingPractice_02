@@ -16,13 +16,10 @@ namespace TrainingPractice_02
         {
             InitializeComponent();
             Init();
-            
-            for(int i = 0; i < m_imagesCount; ++i)
-            {
-                LoadImageToButton(m_buttons[i], m_imageIds[i]);
-            }
+
         }
 
+        // Метод инициализирует все ресурсы данного класса, а также случайным образом располагает картинки
         private void Init()
         {
             m_buttons = new List<Button>();
@@ -52,10 +49,20 @@ namespace TrainingPractice_02
             m_buttons.Add(Image24Show_Button);
 
             m_imageIds = new int[m_imagesCount] 
-                       { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12};
+                       { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12 };
 
+            for(int buttonIter = 0; buttonIter < m_imagesCount; ++buttonIter)
+            {
+                m_buttons[buttonIter].Tag = new int();
+                m_buttons[buttonIter].Tag = buttonIter;
+            }
+
+            ShuffleImages();
+
+            m_guessedPairsCount = 0;
         }
 
+        // Метод перемешивает индексы картинок случайным образом
         private void ShuffleImages()
         {
             Random random = new Random();
@@ -70,7 +77,7 @@ namespace TrainingPractice_02
             }
         }
 
-        // Метод загружает backgroundImage по айди картинки из ресурсов проекта
+        // Метод загружает backgroundImage по индексу картинки из ресурсов проекта
         private void LoadImageToButton(Button btn, int imageId)
         {
             switch(imageId)
@@ -114,6 +121,7 @@ namespace TrainingPractice_02
             }
         }
 
+        // Метод начинает игру сначала
         private void Retry_Button_Click(object sender, EventArgs e)
         {
             GameForm newGame = new GameForm();
@@ -121,18 +129,182 @@ namespace TrainingPractice_02
             newGame.Show();
         }
 
+        // Метод для выхода из игры
         private void ExitToMenu_Button_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void CheckButtons()
+        private void ButtonClickHandle(Button btn)
         {
+            LoadImageToButton(btn, m_imageIds[Convert.ToInt32(btn.Tag)]);
 
+            if(!m_isOneButtonClicked)
+            {
+                m_currentPressedButtonsIds = new int[2] { 0, 0 };
+                m_currentPressedButtonsIds[0] = Convert.ToInt32(btn.Tag);
+                m_isOneButtonClicked = true;
+            }
+            else
+            {
+                m_currentPressedButtonsIds[1] = Convert.ToInt32(btn.Tag);
+
+                if (m_currentPressedButtonsIds[0] == m_currentPressedButtonsIds[1])
+                    return;
+
+                if (m_imageIds[m_currentPressedButtonsIds[0]] == m_imageIds[m_currentPressedButtonsIds[1]])
+                {
+                    MessageBox.Show("Верно!");
+
+                    m_buttons[m_currentPressedButtonsIds[0]].Visible = false;
+                    m_buttons[m_currentPressedButtonsIds[1]].Visible = false;
+                    ++m_guessedPairsCount;
+
+                    if (m_guessedPairsCount == 12)
+                    {
+                        MessageBox.Show("Поздравляем, вы выиграли!");
+                        Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Неверно!");
+                }
+
+                m_isOneButtonClicked = false;
+                m_buttons[m_currentPressedButtonsIds[0]].BackgroundImage = null;
+                m_buttons[m_currentPressedButtonsIds[1]].BackgroundImage = null;
+            }
         }
 
-        const int m_imagesCount = 24;
-        List<Button> m_buttons;
-        int[] m_imageIds;
+        private void Image1Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image1Show_Button);
+        }
+
+        private void Image2Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image2Show_Button);
+        }
+
+        private void Image3Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image3Show_Button);
+        }
+
+        private void Image4Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image4Show_Button);
+        }
+
+        private void Image5Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image5Show_Button);
+        }
+
+        private void Image6Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image6Show_Button);
+        }
+
+        private void Image7Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image7Show_Button);
+        }
+
+        private void Image8Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image8Show_Button);
+        }
+
+        private void Image9Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image9Show_Button);
+        }
+
+        private void Image10Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image10Show_Button);
+        }
+
+        private void Image11Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image11Show_Button);
+        }
+
+        private void Image12Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image12Show_Button);
+        }
+
+        private void Image13Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image13Show_Button);
+        }
+
+        private void Image14Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image14Show_Button);
+        }
+
+        private void Image15Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image15Show_Button);
+        }
+
+        private void Image16Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image16Show_Button);
+        }
+
+        private void Image17Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image17Show_Button);
+        }
+
+        private void Image18Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image18Show_Button);
+        }
+
+        private void Image19Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image19Show_Button);
+        }
+
+        private void Image20Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image20Show_Button);
+        }
+
+        private void Image21Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image21Show_Button);
+        }
+
+        private void Image22Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image22Show_Button);
+        }
+
+        private void Image23Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image23Show_Button);
+        }
+
+        private void Image24Show_Button_Click(object sender, EventArgs e)
+        {
+            ButtonClickHandle(Image24Show_Button);
+        }
+
+        private const int m_imagesCount = 24;
+        private int[] m_imageIds;
+
+        private List<Button> m_buttons;
+
+        private bool m_isOneButtonClicked;
+
+        private int[] m_currentPressedButtonsIds;
+        private uint m_guessedPairsCount; 
     }
 }

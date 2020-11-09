@@ -80,11 +80,12 @@
             // Image1Show_Button
             // 
             this.Image1Show_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Image1Show_Button.Location = new System.Drawing.Point(28, 210);
+            this.Image1Show_Button.Location = new System.Drawing.Point(28, 30);
             this.Image1Show_Button.Name = "Image1Show_Button";
             this.Image1Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image1Show_Button.TabIndex = 2;
             this.Image1Show_Button.UseVisualStyleBackColor = true;
+            this.Image1Show_Button.Click += new System.EventHandler(this.Image1Show_Button_Click);
             // 
             // Image2Show_Button
             // 
@@ -94,6 +95,7 @@
             this.Image2Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image2Show_Button.TabIndex = 3;
             this.Image2Show_Button.UseVisualStyleBackColor = true;
+            this.Image2Show_Button.Click += new System.EventHandler(this.Image2Show_Button_Click);
             // 
             // Image3Show_Button
             // 
@@ -103,6 +105,7 @@
             this.Image3Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image3Show_Button.TabIndex = 4;
             this.Image3Show_Button.UseVisualStyleBackColor = true;
+            this.Image3Show_Button.Click += new System.EventHandler(this.Image3Show_Button_Click);
             // 
             // Image4Show_Button
             // 
@@ -112,6 +115,7 @@
             this.Image4Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image4Show_Button.TabIndex = 5;
             this.Image4Show_Button.UseVisualStyleBackColor = true;
+            this.Image4Show_Button.Click += new System.EventHandler(this.Image4Show_Button_Click);
             // 
             // Image5Show_Button
             // 
@@ -121,6 +125,7 @@
             this.Image5Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image5Show_Button.TabIndex = 6;
             this.Image5Show_Button.UseVisualStyleBackColor = true;
+            this.Image5Show_Button.Click += new System.EventHandler(this.Image5Show_Button_Click);
             // 
             // Image6Show_Button
             // 
@@ -130,6 +135,7 @@
             this.Image6Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image6Show_Button.TabIndex = 7;
             this.Image6Show_Button.UseVisualStyleBackColor = true;
+            this.Image6Show_Button.Click += new System.EventHandler(this.Image6Show_Button_Click);
             // 
             // Image7Show_Button
             // 
@@ -139,6 +145,7 @@
             this.Image7Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image7Show_Button.TabIndex = 8;
             this.Image7Show_Button.UseVisualStyleBackColor = true;
+            this.Image7Show_Button.Click += new System.EventHandler(this.Image7Show_Button_Click);
             // 
             // Image8Show_Button
             // 
@@ -148,6 +155,7 @@
             this.Image8Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image8Show_Button.TabIndex = 9;
             this.Image8Show_Button.UseVisualStyleBackColor = true;
+            this.Image8Show_Button.Click += new System.EventHandler(this.Image8Show_Button_Click);
             // 
             // Image9Show_Button
             // 
@@ -157,6 +165,7 @@
             this.Image9Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image9Show_Button.TabIndex = 10;
             this.Image9Show_Button.UseVisualStyleBackColor = true;
+            this.Image9Show_Button.Click += new System.EventHandler(this.Image9Show_Button_Click);
             // 
             // Image10Show_Button
             // 
@@ -166,15 +175,18 @@
             this.Image10Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image10Show_Button.TabIndex = 11;
             this.Image10Show_Button.UseVisualStyleBackColor = true;
+            this.Image10Show_Button.Click += new System.EventHandler(this.Image10Show_Button_Click);
             // 
             // Image11Show_Button
             // 
             this.Image11Show_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Image11Show_Button.Location = new System.Drawing.Point(28, 30);
+            this.Image11Show_Button.Location = new System.Drawing.Point(28, 210);
             this.Image11Show_Button.Name = "Image11Show_Button";
             this.Image11Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image11Show_Button.TabIndex = 12;
+            this.Image11Show_Button.Tag = "1";
             this.Image11Show_Button.UseVisualStyleBackColor = true;
+            this.Image11Show_Button.Click += new System.EventHandler(this.Image11Show_Button_Click);
             // 
             // Image12Show_Button
             // 
@@ -184,6 +196,7 @@
             this.Image12Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image12Show_Button.TabIndex = 13;
             this.Image12Show_Button.UseVisualStyleBackColor = true;
+            this.Image12Show_Button.Click += new System.EventHandler(this.Image12Show_Button_Click);
             // 
             // Image13Show_Button
             // 
@@ -193,6 +206,7 @@
             this.Image13Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image13Show_Button.TabIndex = 14;
             this.Image13Show_Button.UseVisualStyleBackColor = true;
+            this.Image13Show_Button.Click += new System.EventHandler(this.Image13Show_Button_Click);
             // 
             // Image14Show_Button
             // 
@@ -202,6 +216,7 @@
             this.Image14Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image14Show_Button.TabIndex = 15;
             this.Image14Show_Button.UseVisualStyleBackColor = true;
+            this.Image14Show_Button.Click += new System.EventHandler(this.Image14Show_Button_Click);
             // 
             // Image15Show_Button
             // 
@@ -211,6 +226,7 @@
             this.Image15Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image15Show_Button.TabIndex = 16;
             this.Image15Show_Button.UseVisualStyleBackColor = true;
+            this.Image15Show_Button.Click += new System.EventHandler(this.Image15Show_Button_Click);
             // 
             // Image16Show_Button
             // 
@@ -220,6 +236,7 @@
             this.Image16Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image16Show_Button.TabIndex = 17;
             this.Image16Show_Button.UseVisualStyleBackColor = true;
+            this.Image16Show_Button.Click += new System.EventHandler(this.Image16Show_Button_Click);
             // 
             // Image17Show_Button
             // 
@@ -229,6 +246,7 @@
             this.Image17Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image17Show_Button.TabIndex = 18;
             this.Image17Show_Button.UseVisualStyleBackColor = true;
+            this.Image17Show_Button.Click += new System.EventHandler(this.Image17Show_Button_Click);
             // 
             // Image18Show_Button
             // 
@@ -238,6 +256,7 @@
             this.Image18Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image18Show_Button.TabIndex = 19;
             this.Image18Show_Button.UseVisualStyleBackColor = true;
+            this.Image18Show_Button.Click += new System.EventHandler(this.Image18Show_Button_Click);
             // 
             // Image19Show_Button
             // 
@@ -247,6 +266,7 @@
             this.Image19Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image19Show_Button.TabIndex = 20;
             this.Image19Show_Button.UseVisualStyleBackColor = true;
+            this.Image19Show_Button.Click += new System.EventHandler(this.Image19Show_Button_Click);
             // 
             // Image20Show_Button
             // 
@@ -256,6 +276,7 @@
             this.Image20Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image20Show_Button.TabIndex = 21;
             this.Image20Show_Button.UseVisualStyleBackColor = true;
+            this.Image20Show_Button.Click += new System.EventHandler(this.Image20Show_Button_Click);
             // 
             // Image21Show_Button
             // 
@@ -265,6 +286,7 @@
             this.Image21Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image21Show_Button.TabIndex = 22;
             this.Image21Show_Button.UseVisualStyleBackColor = true;
+            this.Image21Show_Button.Click += new System.EventHandler(this.Image21Show_Button_Click);
             // 
             // Image22Show_Button
             // 
@@ -274,6 +296,7 @@
             this.Image22Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image22Show_Button.TabIndex = 23;
             this.Image22Show_Button.UseVisualStyleBackColor = true;
+            this.Image22Show_Button.Click += new System.EventHandler(this.Image22Show_Button_Click);
             // 
             // Image23Show_Button
             // 
@@ -283,6 +306,7 @@
             this.Image23Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image23Show_Button.TabIndex = 25;
             this.Image23Show_Button.UseVisualStyleBackColor = true;
+            this.Image23Show_Button.Click += new System.EventHandler(this.Image23Show_Button_Click);
             // 
             // Image24Show_Button
             // 
@@ -292,6 +316,7 @@
             this.Image24Show_Button.Size = new System.Drawing.Size(101, 84);
             this.Image24Show_Button.TabIndex = 26;
             this.Image24Show_Button.UseVisualStyleBackColor = true;
+            this.Image24Show_Button.Click += new System.EventHandler(this.Image24Show_Button_Click);
             // 
             // GameForm
             // 
