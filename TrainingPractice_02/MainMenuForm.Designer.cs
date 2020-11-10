@@ -71,7 +71,7 @@
             this.LeaderBoardShow_Button.Name = "LeaderBoardShow_Button";
             this.LeaderBoardShow_Button.Size = new System.Drawing.Size(168, 41);
             this.LeaderBoardShow_Button.TabIndex = 3;
-            this.LeaderBoardShow_Button.Text = "Таблица попыток";
+            this.LeaderBoardShow_Button.Text = "История игр";
             this.LeaderBoardShow_Button.UseVisualStyleBackColor = true;
             this.LeaderBoardShow_Button.Click += new System.EventHandler(this.LeaderBoardShow_Button_Click);
             // 
