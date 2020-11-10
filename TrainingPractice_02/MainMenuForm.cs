@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,14 @@ namespace TrainingPractice_02
         private void ExitGame_Button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LeaderBoardShow_Button_Click(object sender, EventArgs e)
+        {
+            string path = "leaderboard.txt";
+            string leaderBoard = File.ReadAllText(path);
+
+            MessageBox.Show(leaderBoard, "Таблица попыток");
         }
     }
 }

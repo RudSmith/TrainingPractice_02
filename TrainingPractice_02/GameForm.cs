@@ -173,6 +173,8 @@ namespace TrainingPractice_02
                     {
                         GameDurationTimer.Enabled = false;
                         MessageBox.Show("Поздравляем, вы выиграли!");
+                        LeaderBoardRecordForm leaderBoardRecordForm = new LeaderBoardRecordForm(m_gameDurationInSeconds);
+                        leaderBoardRecordForm.Show();
                         Close();
                     }
                 }

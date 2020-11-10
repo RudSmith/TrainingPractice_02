@@ -32,6 +32,7 @@
             this.StartGame_Button = new System.Windows.Forms.Button();
             this.AboutGame_Button = new System.Windows.Forms.Button();
             this.ExitGame_Button = new System.Windows.Forms.Button();
+            this.LeaderBoardShow_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartGame_Button
@@ -46,7 +47,7 @@
             // 
             // AboutGame_Button
             // 
-            this.AboutGame_Button.Location = new System.Drawing.Point(86, 126);
+            this.AboutGame_Button.Location = new System.Drawing.Point(86, 109);
             this.AboutGame_Button.Name = "AboutGame_Button";
             this.AboutGame_Button.Size = new System.Drawing.Size(168, 41);
             this.AboutGame_Button.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // ExitGame_Button
             // 
-            this.ExitGame_Button.Location = new System.Drawing.Point(86, 191);
+            this.ExitGame_Button.Location = new System.Drawing.Point(86, 203);
             this.ExitGame_Button.Name = "ExitGame_Button";
             this.ExitGame_Button.Size = new System.Drawing.Size(168, 41);
             this.ExitGame_Button.TabIndex = 2;
@@ -64,11 +65,22 @@
             this.ExitGame_Button.UseVisualStyleBackColor = true;
             this.ExitGame_Button.Click += new System.EventHandler(this.ExitGame_Button_Click);
             // 
+            // LeaderBoardShow_Button
+            // 
+            this.LeaderBoardShow_Button.Location = new System.Drawing.Point(86, 156);
+            this.LeaderBoardShow_Button.Name = "LeaderBoardShow_Button";
+            this.LeaderBoardShow_Button.Size = new System.Drawing.Size(168, 41);
+            this.LeaderBoardShow_Button.TabIndex = 3;
+            this.LeaderBoardShow_Button.Text = "Таблица попыток";
+            this.LeaderBoardShow_Button.UseVisualStyleBackColor = true;
+            this.LeaderBoardShow_Button.Click += new System.EventHandler(this.LeaderBoardShow_Button_Click);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 298);
+            this.ClientSize = new System.Drawing.Size(349, 290);
+            this.Controls.Add(this.LeaderBoardShow_Button);
             this.Controls.Add(this.ExitGame_Button);
             this.Controls.Add(this.AboutGame_Button);
             this.Controls.Add(this.StartGame_Button);
@@ -87,6 +99,7 @@
         private System.Windows.Forms.Button StartGame_Button;
         private System.Windows.Forms.Button AboutGame_Button;
         private System.Windows.Forms.Button ExitGame_Button;
+        private System.Windows.Forms.Button LeaderBoardShow_Button;
     }
 }
 

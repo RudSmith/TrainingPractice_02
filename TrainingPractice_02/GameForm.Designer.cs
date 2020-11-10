@@ -460,7 +460,7 @@
         private System.Windows.Forms.Label RightGuessesLabel;
         private System.Windows.Forms.PictureBox RedCrossPictureBox;
         private System.Windows.Forms.Label WrongGuessesLabel;
-        private System.Windows.Forms.Timer GameDurationTimer;
         private System.Windows.Forms.Label GameDurationTimerLabel;
+        public System.Windows.Forms.Timer GameDurationTimer;
     }
 }
