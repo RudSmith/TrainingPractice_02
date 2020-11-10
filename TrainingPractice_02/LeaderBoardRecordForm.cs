@@ -31,7 +31,7 @@ namespace TrainingPractice_02
 
             string path = "leaderboard.txt";
 
-            File.AppendAllText(path, NameInput_TextBox.Text + " - " + minutes + " : " + seconds);
+            File.AppendAllText(path, NameInput_TextBox.Text + " - " + minutes + " : " + seconds + '\n');
 
             Close();
         }
