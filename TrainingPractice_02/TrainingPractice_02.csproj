@@ -134,5 +134,53 @@
   <ItemGroup>
     <None Include="bin\Debug\tech_car_beetle_icon_157415.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\scifi_starwars_darth_icon_157471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\religion_pentagram_icon_158245.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\religion_eyeofra_icon_158250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hangloose_icon_157540.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\gui_user_ninja_icon_157555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\gui_portfolio_icon_157607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\gui_home_icon_158442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\fist_icon_158564.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\fighter_jet_icon_157720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2730389-brain-divide-inkcontober-sains_112694.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tech_car_beetle_icon_157415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\social_instagram_icon_157441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\shop_cart_icon_157457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\transparent-green-checkmark-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\af2dfd726ed01af133fcaf3e4707ebdf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -305,6 +305,7 @@ namespace TrainingPractice_02
         private bool m_isOneButtonClicked;
 
         private int[] m_currentPressedButtonsIds;
-        private uint m_guessedPairsCount; 
+        private uint m_guessedPairsCount;
+
     }
 }

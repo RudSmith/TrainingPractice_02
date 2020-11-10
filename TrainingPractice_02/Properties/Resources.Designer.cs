@@ -61,6 +61,26 @@ namespace TrainingPractice_02.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon _2730389_brain_divide_inkcontober_sains_112694 {
+            get {
+                object obj = ResourceManager.GetObject("_2730389_brain_divide_inkcontober_sains_112694", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap af2dfd726ed01af133fcaf3e4707ebdf {
+            get {
+                object obj = ResourceManager.GetObject("af2dfd726ed01af133fcaf3e4707ebdf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Camera {
@@ -176,6 +196,16 @@ namespace TrainingPractice_02.Properties {
         internal static System.Drawing.Bitmap StarWars {
             get {
                 object obj = ResourceManager.GetObject("StarWars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transparent_green_checkmark_md {
+            get {
+                object obj = ResourceManager.GetObject("transparent_green_checkmark_md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
