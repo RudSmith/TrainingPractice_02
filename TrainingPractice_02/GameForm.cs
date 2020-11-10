@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -60,6 +61,13 @@ namespace TrainingPractice_02
             ShuffleImages();
 
             m_guessedPairsCount = 0;
+            m_wrongGuessesCount = 0;
+
+            RightGuessesLabel.Text = m_guessedPairsCount.ToString();
+            WrongGuessesLabel.Text = m_wrongGuessesCount.ToString();
+
+            GameDurationTimer.Enabled = true;
+            GameDurationTimerLabel.Text = "00 : 00";
         }
 
         // Метод перемешивает индексы картинок случайным образом
@@ -138,8 +146,9 @@ namespace TrainingPractice_02
         private void ButtonClickHandle(Button btn)
         {
             LoadImageToButton(btn, m_imageIds[Convert.ToInt32(btn.Tag)]);
+            btn.Update();
 
-            if(!m_isOneButtonClicked)
+            if (!m_isOneButtonClicked)
             {
                 m_currentPressedButtonsIds = new int[2] { 0, 0 };
                 m_currentPressedButtonsIds[0] = Convert.ToInt32(btn.Tag);
@@ -147,6 +156,7 @@ namespace TrainingPractice_02
             }
             else
             {
+                Thread.Sleep(300);
                 m_currentPressedButtonsIds[1] = Convert.ToInt32(btn.Tag);
 
                 if (m_currentPressedButtonsIds[0] == m_currentPressedButtonsIds[1])
@@ -154,27 +164,42 @@ namespace TrainingPractice_02
 
                 if (m_imageIds[m_currentPressedButtonsIds[0]] == m_imageIds[m_currentPressedButtonsIds[1]])
                 {
-                    MessageBox.Show("Верно!");
-
                     m_buttons[m_currentPressedButtonsIds[0]].Visible = false;
                     m_buttons[m_currentPressedButtonsIds[1]].Visible = false;
                     ++m_guessedPairsCount;
+                    RightGuessesLabel.Text = m_guessedPairsCount.ToString();
 
                     if (m_guessedPairsCount == 12)
                     {
+                        GameDurationTimer.Enabled = false;
                         MessageBox.Show("Поздравляем, вы выиграли!");
                         Close();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Неверно!");
+                    ++m_wrongGuessesCount;
+                    WrongGuessesLabel.Text = m_wrongGuessesCount.ToString();
                 }
-
                 m_isOneButtonClicked = false;
                 m_buttons[m_currentPressedButtonsIds[0]].BackgroundImage = null;
                 m_buttons[m_currentPressedButtonsIds[1]].BackgroundImage = null;
             }
+        }
+
+        private void GameDurationTimer_Tick(object sender, EventArgs e)
+        {
+            ++m_gameDurationInSeconds;
+            string minutes = (m_gameDurationInSeconds / 60).ToString();
+            string seconds = (m_gameDurationInSeconds % 60).ToString();
+
+            if (Convert.ToInt32(minutes) < 10)
+                minutes = "0" + minutes;
+
+            if (Convert.ToInt32(seconds) < 10)
+                seconds = "0" + seconds;
+
+            GameDurationTimerLabel.Text = minutes.ToString() + " : " + seconds.ToString();
         }
 
         private void Image1Show_Button_Click(object sender, EventArgs e)
@@ -297,15 +322,18 @@ namespace TrainingPractice_02
             ButtonClickHandle(Image24Show_Button);
         }
 
+
         private const int m_imagesCount = 24;
         private int[] m_imageIds;
 
         private List<Button> m_buttons;
-
         private bool m_isOneButtonClicked;
-
         private int[] m_currentPressedButtonsIds;
+
         private uint m_guessedPairsCount;
+        private uint m_wrongGuessesCount;
+
+        private uint m_gameDurationInSeconds;
 
     }
 }
