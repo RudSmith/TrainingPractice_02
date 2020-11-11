@@ -163,7 +163,7 @@ namespace TrainingPractice_02
             
             this.Close();
             GameForm newGame = new GameForm();
-            newGame.ShowDialog();
+            newGame.Show();
         }
 
         // Метод для выхода из игры
