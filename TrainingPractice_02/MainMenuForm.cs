@@ -28,12 +28,19 @@ namespace TrainingPractice_02
         // Нажатие на кнопку показа истории игр
         private void LeaderBoardShow_Button_Click(object sender, EventArgs e)
         {
-            // Записываем путь к файлу с результатами игр
-            const string path = "leaderboard.txt";
-            // Считываем в строку все данные из этого файла
-            string leaderBoard = File.ReadAllText(path);
-            // В mboх выводим эту строку
-            MessageBox.Show(leaderBoard, "История игр");
+            try
+            {
+                // Записываем путь к файлу с результатами игр
+                const string path = "leaderboard.txt";
+                // Считываем в строку все данные из этого файла
+                string leaderBoard = File.ReadAllText(path);
+                // В mboх выводим эту строку
+                MessageBox.Show(leaderBoard, "История игр");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ошибка." + ex.Message);
+            }
         }
 
         // Нажатие на кнопку выхода закрывает меню
