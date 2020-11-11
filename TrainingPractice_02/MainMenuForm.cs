@@ -28,18 +28,18 @@ namespace TrainingPractice_02
         // Нажатие на кнопку показа истории игр
         private void LeaderBoardShow_Button_Click(object sender, EventArgs e)
         {
-            try
+            // Записываем путь к файлу с результатами игр
+            const string path = "leaderboard.txt";
+            // Считываем в строку все данные из этого файла
+            if (File.Exists(path))
             {
-                // Записываем путь к файлу с результатами игр
-                const string path = "leaderboard.txt";
-                // Считываем в строку все данные из этого файла
                 string leaderBoard = File.ReadAllText(path);
                 // В mboх выводим эту строку
                 MessageBox.Show(leaderBoard, "История игр");
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show("Ошибка." + ex.Message);
+                MessageBox.Show("История пуста.");
             }
         }
 
