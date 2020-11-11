@@ -160,7 +160,6 @@ namespace TrainingPractice_02
         // Метод начинает игру сначала
         private void Retry_Button_Click(object sender, EventArgs e)
         {
-            
             this.Close();
             GameForm newGame = new GameForm();
             newGame.Show();

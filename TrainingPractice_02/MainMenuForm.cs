@@ -1,12 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TrainingPractice_02
@@ -18,29 +11,35 @@ namespace TrainingPractice_02
             InitializeComponent();
         }
 
+        // Нажатие на кнопку начала игры создаёт форму с игрой и показывает её
         private void StartGame_Button_Click(object sender, EventArgs e)
         {
             GameForm gameForm = new GameForm();
             gameForm.Show();
         }
 
+        // Нажатие на кнопку "о игре" создаёт форму с информацией о игре и показывает её
         private void AboutGame_Button_Click(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.ShowDialog();
         }
 
+        // Нажатие на кнопку показа истории игр
+        private void LeaderBoardShow_Button_Click(object sender, EventArgs e)
+        {
+            // Записываем путь к файлу с результатами игр
+            const string path = "leaderboard.txt";
+            // Считываем в строку все данные из этого файла
+            string leaderBoard = File.ReadAllText(path);
+            // В mboх выводим эту строку
+            MessageBox.Show(leaderBoard, "Таблица попыток");
+        }
+
+        // Нажатие на кнопку выхода закрывает меню
         private void ExitGame_Button_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void LeaderBoardShow_Button_Click(object sender, EventArgs e)
-        {
-            string path = "leaderboard.txt";
-            string leaderBoard = File.ReadAllText(path);
-
-            MessageBox.Show(leaderBoard, "Таблица попыток");
         }
     }
 }
