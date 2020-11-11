@@ -32,6 +32,7 @@
             this.NameInput_TextBox = new System.Windows.Forms.TextBox();
             this.AskForName_Label = new System.Windows.Forms.Label();
             this.MakeRecordingToLeaderBoardTable_Button = new System.Windows.Forms.Button();
+            this.SkipRecordingToLeaderBoard_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameInput_TextBox
@@ -52,7 +53,7 @@
             // 
             // MakeRecordingToLeaderBoardTable_Button
             // 
-            this.MakeRecordingToLeaderBoardTable_Button.Location = new System.Drawing.Point(124, 92);
+            this.MakeRecordingToLeaderBoardTable_Button.Location = new System.Drawing.Point(190, 97);
             this.MakeRecordingToLeaderBoardTable_Button.Name = "MakeRecordingToLeaderBoardTable_Button";
             this.MakeRecordingToLeaderBoardTable_Button.Size = new System.Drawing.Size(132, 52);
             this.MakeRecordingToLeaderBoardTable_Button.TabIndex = 2;
@@ -60,11 +61,22 @@
             this.MakeRecordingToLeaderBoardTable_Button.UseVisualStyleBackColor = true;
             this.MakeRecordingToLeaderBoardTable_Button.Click += new System.EventHandler(this.MakeRecordingToLeaderBoardTable_Button_Click);
             // 
+            // SkipRecordingToLeaderBoard_Button
+            // 
+            this.SkipRecordingToLeaderBoard_Button.Location = new System.Drawing.Point(41, 97);
+            this.SkipRecordingToLeaderBoard_Button.Name = "SkipRecordingToLeaderBoard_Button";
+            this.SkipRecordingToLeaderBoard_Button.Size = new System.Drawing.Size(132, 52);
+            this.SkipRecordingToLeaderBoard_Button.TabIndex = 3;
+            this.SkipRecordingToLeaderBoard_Button.Text = "Не вносить меня в таблицу";
+            this.SkipRecordingToLeaderBoard_Button.UseVisualStyleBackColor = true;
+            this.SkipRecordingToLeaderBoard_Button.Click += new System.EventHandler(this.SkipRecordingToLeaderBoard_Button_Click);
+            // 
             // LeaderBoardRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 161);
+            this.Controls.Add(this.SkipRecordingToLeaderBoard_Button);
             this.Controls.Add(this.MakeRecordingToLeaderBoardTable_Button);
             this.Controls.Add(this.AskForName_Label);
             this.Controls.Add(this.NameInput_TextBox);
@@ -81,5 +93,6 @@
         private System.Windows.Forms.TextBox NameInput_TextBox;
         private System.Windows.Forms.Label AskForName_Label;
         private System.Windows.Forms.Button MakeRecordingToLeaderBoardTable_Button;
+        private System.Windows.Forms.Button SkipRecordingToLeaderBoard_Button;
     }
 }
