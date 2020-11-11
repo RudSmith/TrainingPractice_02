@@ -418,7 +418,9 @@
             this.Controls.Add(this.Image1Show_Button);
             this.Controls.Add(this.Retry_Button);
             this.Controls.Add(this.ExitToMenu_Button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "GameForm";
             this.Text = "Игра";
             ((System.ComponentModel.ISupportInitialize)(this.GreenCheckMarkPictureBox)).EndInit();
