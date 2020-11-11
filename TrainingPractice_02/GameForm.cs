@@ -13,6 +13,17 @@ namespace TrainingPractice_02
             Init();
         }
 
+        // Метод инициализирует все ресурсы данного класса, а также случайным образом располагает картинки
+        private void Init()
+        {
+            InitButtonsList();
+            InitButtonsTags();
+            InitImageIds();
+            InitLabelsWithGuessesCount();
+            InitGameDurationTimer();
+            ShuffleImages();
+        }
+
         // Метод создаёт список из существующих на экране кнопок для удобной работы с ними
         private void InitButtonsList()
         {
@@ -98,16 +109,6 @@ namespace TrainingPractice_02
             }
         }
 
-        // Метод инициализирует все ресурсы данного класса, а также случайным образом располагает картинки
-        private void Init()
-        {
-            InitButtonsList();
-            InitButtonsTags();
-            InitImageIds();
-            InitLabelsWithGuessesCount();
-            InitGameDurationTimer();
-            ShuffleImages();
-        }
 
 
         // Метод загружает backgroundImage кнопки по индексу картинки из ресурсов проекта
