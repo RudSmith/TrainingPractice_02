@@ -33,7 +33,7 @@ namespace TrainingPractice_02
             // Считываем в строку все данные из этого файла
             string leaderBoard = File.ReadAllText(path);
             // В mboх выводим эту строку
-            MessageBox.Show(leaderBoard, "Таблица попыток");
+            MessageBox.Show(leaderBoard, "История игр");
         }
 
         // Нажатие на кнопку выхода закрывает меню
