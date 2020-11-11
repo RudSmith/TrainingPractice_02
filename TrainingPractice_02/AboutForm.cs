@@ -17,6 +17,7 @@ namespace TrainingPractice_02
             InitializeComponent();
         }
 
+        // Нажатие на кнопку "в меню" закрывает форму
         private void AboutForm_Exit_Button_Click(object sender, EventArgs e)
         {
             Close();
