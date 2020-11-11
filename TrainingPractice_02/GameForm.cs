@@ -278,16 +278,26 @@ namespace TrainingPractice_02
             CheckPlayersMove((Button)sender);
         }
 
+        // Константа, обозначающая количество изображений
         private const int m_imagesCount = 24;
+        // Массив с идентификаторами картинок
         private int[] m_imageIds;
 
+        // Список кнопок для удобной работы с ними
         private List<Button> m_buttons;
+
+        // Булева переменная, которая следит за тем, на какой стадии ход игрока: 
+        // Он открыл одну картинку из двух (true), или же ни одной (false)
         private bool m_isOneButtonClicked;
+        // Массив, хранящий номера нажатых кнопок на текущем ходу
         private int[] m_currentPressedButtonsIds;
 
+        // Поле, хранящее количество угаданных пар
         private uint m_guessedPairsCount;
+        // Поле, хранящее количество ошибок пользователя
         private uint m_wrongGuessesCount;
 
+        // Длительность игры в секундах
         private uint m_gameDurationInSeconds;
 
     }
