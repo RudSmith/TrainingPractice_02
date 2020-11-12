@@ -34,9 +34,15 @@ namespace TrainingPractice_02
             if (File.Exists(path))
             {
                 string leaderBoard = File.ReadAllText(path);
-                // В mboх выводим эту строку
-                MessageBox.Show(leaderBoard, "История игр");
+
+                // Если файл существует, но пуст, выводим об этом сообщение
+                if(leaderBoard.Length == 0)
+                    MessageBox.Show("История пуста.");
+                else
+                    // Иначе, выводим историю игр
+                    MessageBox.Show(leaderBoard, "История игр");
             }
+            // Если файла не существует, также выводим сообщение
             else
             {
                 MessageBox.Show("История пуста.");
