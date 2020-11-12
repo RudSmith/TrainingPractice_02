@@ -227,7 +227,6 @@ namespace TrainingPractice_02
                         // Здесь создаём форму, которая делает запись в таблицу с историей игр
                         LeaderBoardRecordForm leaderBoardRecordForm = new LeaderBoardRecordForm(m_gameDurationInSeconds);
                         leaderBoardRecordForm.ShowDialog();
-                        Close();
                     }
                 }
                 // Если же пользователь неправильно угадал пару картинок 
